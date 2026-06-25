@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>With Love, For You 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Petit+Formal+Script&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dark-romantic.css" />
+  <link rel="stylesheet" href="css/performance.css" />
+  <link rel="stylesheet" href="css/gpu-optimization.css" />
+  <!-- Device tier detection: runs synchronously so later scripts can read window.DeviceTier -->
+  <script src="js/device-tier-system.js"></script>
+</head>
+<body>
+
+  <!-- ===== GLOBAL CINEMATIC BACKGROUND (fixed, z=-10, one unified layer) ===== -->
+  <div id="global-bg-layer" aria-hidden="true"></div>
+
+  <!-- ===== INTRO SCENE ===== -->
+  <div id="intro-scene">
+    <canvas id="particle-canvas-intro"></canvas>
+    <div id="gift-wrapper">
+      <div id="gift-container" onclick="openGift()">
+        <div id="gift-box">
+          <div class="gift-lid">
+            <div class="ribbon-h"></div>
+            <div class="ribbon-v"></div>
+            <div class="bow">
+              <div class="bow-left"></div>
+              <div class="bow-right"></div>
+              <div class="bow-center"></div>
+            </div>
+          </div>
+          <div class="gift-body">
+            <div class="ribbon-body-h"></div>
+            <div class="ribbon-body-v"></div>
+          </div>
+        </div>
+        <p class="gift-hint">✨ tap to open ✨</p>
+      </div>
+      <div id="bloom-container"></div>
+    </div>
+    <div id="petal-rain-intro"></div>
+    <div id="intro-overlay"></div>
+  </div>
+
+  <!-- Fixed ambient layers — live at body level so they cover ALL sections -->
+  <div class="cinematic-vignette"></div>
+  <canvas id="particle-canvas"></canvas>
+  <div id="falling-petals"></div>
+
+  <!-- ===== MAIN WEBSITE ===== -->
+  <div id="main-site" class="hidden">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Моя дорогая Абирочка</p>
+        <h1 class="hero-title">
+          <span class="line1">Жаным менің,</span>
+          <span class="line2 italic">прости своего дурака</span>
+        </h1>
+        <p class="hero-sub">Я правда очень сожалею, что снова подвел твое доверие</p>
+        <div class="hero-flowers">
+          <svg class="hero-flower" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g class="flower-group">
+              <ellipse cx="50" cy="30" rx="12" ry="22" fill="rgba(255,182,193,0.85)" class="petal p1"/>
+              <ellipse cx="50" cy="30" rx="12" ry="22" fill="rgba(255,182,193,0.85)" class="petal p2" transform="rotate(60,50,50)"/>
+              <ellipse cx="50" cy="30" rx="12" ry="22" fill="rgba(255,182,193,0.85)" class="petal p3" transform="rotate(120,50,50)"/>
+              <ellipse cx="50" cy="30" rx="12" ry="22" fill="rgba(255,192,203,0.85)" class="petal p4" transform="rotate(180,50,50)"/>
+              <ellipse cx="50" cy="30" rx="12" ry="22" fill="rgba(255,192,203,0.85)" class="petal p5" transform="rotate(240,50,50)"/>
+              <ellipse cx="50" cy="30" rx="12" ry="22" fill="rgba(255,192,203,0.85)" class="petal p6" transform="rotate(300,50,50)"/>
+              <circle cx="50" cy="50" r="10" fill="rgba(255,220,180,0.95)"/>
+            </g>
+          </svg>
+        </div>
+        <a href="#message" class="scroll-btn">
+          <span>Листай ниже жаным</span>
+          <div class="scroll-arrow">↓</div>
+        </a>
+      </div>
+      
+        
+        
+        
+      </div>
+    </section>
+
+    <!-- ===== MESSAGE ===== -->
+    <section id="message">
+      <div class="section-inner">
+        <div class="message-card glass">
+          <div class="card-flowers-top">
+            <span class="inline-flower">🌸</span>
+            <span class="inline-flower delay1">🌺</span>
+            <span class="inline-flower delay2">🌸</span>
+          </div>
+          <p class="msg-label">От всего моего сердца</p>
+          <h2 class="msg-title">Ты моя самая<br/><em>искренняя мечта</em><br/>ставшая реальностью. <br>(Только в жены осталось взять:)<br/> </h2>
+          <p class="msg-body">Я знаю что сейчас мои слова могут значить гораздо меньше чем раньше так как ты просила меня не врать тебе даже в мелочах, ты поверила мне снова и дала шанс а я не оправдал его. 
+И больше всего я сожалею не из за ссоры а из за того что я причинил боль человеку которого я так безумно люблю. Я понимаю твою обиду жаным, понимаю твое разочарование и понимаю почему тебе сейчас трудно мне верить,
+я не прошу тебя забыть все сразу и не прошу мгновенно простить меня, я лишь хочу чтобы ты знала что я осознаю свои ошибки и искренне сожалею о них, я хочу быть лучше для тебя, хочу быть тем человеком который будет заслуживать твою любовь и доверие.
+Прости меня за ложь,прости меня за нарушенное обещание, прости меня за то что снова заставил тебя сомневаться во мне
+</p>
+          <p class="msg-body"></p>
+          <div class="msg-signature">—Я тебя люблю 🌹</div>
+        </div>
+      </div>
+      <div class="section-petals">
+        <div class="s-petal sp1">🌸</div>
+        <div class="s-petal sp2">🌺</div>
+        <div class="s-petal sp3">🌼</div>
+        <div class="s-petal sp4">🌸</div>
+        <div class="s-petal sp5">🌷</div>
+      </div>
+    </section>
+
+    <!-- ===== REASONS ===== -->
+    <section id="reasons">
+      <div class="section-inner">
+        <p class="section-eyebrow">Тысяча причин </p>
+        <h2 class="section-title">Почему я люблю тебя</h2>
+        <div class="reasons-grid">
+          <div class="reason-card glass reveal-card"><div class="reason-icon">🌹</div><h3>Твоя улыбка</h3><p>Твоя улыбкаОна одновременно освещает каждую комнату и каждый уголок моего сердца</p></div>
+          <div class="reason-card glass reveal-card delay1"><div class="reason-icon">💫</div><h3>Твоя душа</h3><p>Редкая, искренняя и более красивая, чем любой цветок когда либо выращенный</p></div>
+          <div class="reason-card glass reveal-card delay2"><div class="reason-icon">🌸</div><h3>Твоя доброта</h3><p>Тот способ, которым ты любишь мир, заставляет меня хотеть быть лучше каждый день</p></div>
+          <div class="reason-card glass reveal-card delay3"><div class="reason-icon">✨</div><h3>Твой смех</h3><p>Лучший звук во вселенной) Моя любимая мелодия, всегда, особенно как поешь в аудиозванке</p></div>
+          <div class="reason-card glass reveal-card delay4"><div class="reason-icon">🌺</div><h3>Твоя сила</h3><p>Ты переносишь столько грации через все и я восхищаюсь тобой безгранично гордость ты мое</p></div>
+          <div class="reason-card glass reveal-card delay5"><div class="reason-icon">💖</div><h3>Просто ты</h3><p>Каждая версия тебя, каждый момент, ты больше чем достаточно</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GARDEN ===== -->
+    <section id="garden">
+      <div class="garden-bg"></div>
+      <div class="section-inner">
+        <p class="section-eyebrow">Наш тайный сад</p>
+        <h2 class="section-title garden-title">Сад который я вырастил<br/><em>для тебя с любовью</em></h2>
+        <div class="flower-garden">
+          <div class="garden-flower gf1"><div class="gf-bloom">🌹</div><div class="gf-stem"></div><div class="gf-tooltip glass"><strong>Роза</strong><span>Бесконечная любовь</span></div></div>
+          <div class="garden-flower gf2"><div class="gf-bloom">🌸</div><div class="gf-stem"></div><div class="gf-tooltip glass"><strong>Вишня</strong><span>Нежная красота</span></div></div>
+          <div class="garden-flower gf4"><div class="gf-bloom">🌺</div><div class="gf-stem"></div><div class="gf-tooltip glass"><strong>Гибискус</strong><span>Нежное страстное желание</span></div></div>
+          <div class="garden-flower gf5"><div class="gf-bloom">🌼</div><div class="gf-stem"></div><div class="gf-tooltip glass"><strong>Ромашка</strong><span>Искреннее преданность</span></div></div>
+          <div class="garden-flower gf6"><div class="gf-bloom">🌷</div><div class="gf-stem"></div><div class="gf-tooltip glass"><strong>Тюльпан</strong><span>Идеическое счастье</span></div></div>
+          <div class="garden-flower gf7"><div class="gf-bloom">🌻</div><div class="gf-stem"></div><div class="gf-tooltip glass"><strong>Подсолнух</strong><span>Тепло и радость</span></div></div>
+        </div>
+        <p class="garden-note">✨ наведи курсор на цветок чтобы узнать его значение ✨</p>
+      </div>
+    </section>
+
+    <!-- ===== MEMORIES ===== -->
+    <section id="memories">
+      <div class="section-inner">
+        <p class="section-eyebrow"></p>
+        <h2 class="section-title">Твои ВЕЛИКОЛЕПНЫЕ<br/><em>фоточки</em></h2>
+        <div class="gallery-grid">
+          <div class="gallery-card glass gc1"><img src="js/jpg/Abirok4.jpeg" class="gallery-img" alt="Photo 1"><div class="gallery-caption">you</div></div>
+          <div class="gallery-card glass gc2"><img src="js/jpg/Abirok5.jpeg" class="gallery-img" alt="Photo 2"><div class="gallery-caption">are</div></div>
+          <div class="gallery-card glass gc3"><img src="js/jpg/Abirok6.jpeg" class="gallery-img" alt="Photo 3"><div class="gallery-caption">so</div></div>
+          <div class="gallery-card glass gc4"><img src="js/jpg/Abirok7.jpeg" class="gallery-img" alt="Photo 4"><div class="gallery-caption">beautiful</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINALE ===== -->
+    <section id="finale">
+      <canvas id="finale-canvas"></canvas>
+      <div class="finale-inner">
+        <div class="finale-flowers">
+          <span class="ff">🌸</span><span class="ff delay1">🌺</span><span class="ff delay2">🌹</span><span class="ff delay3">🌸</span><span class="ff delay4">🌷</span>
+        </div>
+        <p class="finale-eyebrow">Всегда и навсегда</p>
+        <h2 class="finale-title">Я тебя люблю<br/><em>безгранично</em></h2>
+        <p class="finale-body"></p>
+        <div class="finale-heart"><div class="heart-pulse">💗</div>И на последок хочу сказать куда бы нас ни завела жизнь, знай что где то во вселенной растет сад, цветущий всеми чувствами которые я испытываю к тебе. Ты заслуживаешь весь мир жаным, ты заслуживаешь всех цветов . Ты заслуживаешь всего </div>
+        <p class="finale-sig">Сделано с любовью специально для тебя 🌸</p>
+      </div>
+    </section>
+
+    <footer><p>🌸 Сделано с любовью и лепестками 🌸</p></footer>
+  </div>
+
+  <!-- Scripts — tier already set in <head>; engine files load in dependency order -->
+  <script src="js/render-loop.js"></script>
+  <script src="js/particle-pool.js"></script>
+  <script src="js/performance-manager.js"></script>
+  <script src="js/canvas-flower-engine.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/audio-system.js"></script>
+  <script src="js/intro.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html> 

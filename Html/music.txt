@@ -1,0 +1,1 @@
+Copy-Item "C:\Users\temir\Downloads\v--x-v-prince-asilim-(allmusic.kz).mp3" "C:\Users\temir\OneDrive\Desktop\PythonVsCode\Html\music\" -Force
